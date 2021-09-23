@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0;
+}
+
+/* Start Header  */
+header{
+    height:100vh;
+    background-image:linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.2)
+    ),url("../img/car-8.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+/* End Header  */
+
+/* Start  Nav bar  */
+.navbar{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+    padding:20px 30px;
+
+    transition:all 0.7s;
+}
+
+.navmenus{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9));
+    padding:5px 30px;
+}
+
+.menuitems{
+    color:#35d6db;
+    letter-spacing:1px;
+
+    transition:all 0.7s;
+}
+
+.menuitems:hover{
+    color:red;
+
+}
+
+.lines1,.lines2,.lines3{
+    width:23px;
+    height:3px;
+    margin:5px;
+}
+
+.changes .lines1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.changes .lines2{
+    opacity:0;
+}
+
+.changes .lines3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* End Nav bar  */
+
+/* Start banner  */
+.banners{
+    width:80%;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    
+}
+
+.bannertops{
+    animation:bnani 3s;
+}
+
+.bannerheaders{
+    animation:bnani 3s;
+    animation-delay:0.7s;
+    animation-fill-mode:backwards;
+    
+}
+
+.bannerparagraphs{
+    animation:bnani 3s;
+    animation-delay:1.5s;
+    animation-fill-mode:backwards;
+}
+
+.banners .btn{
+    animation:btnani 4s;
+    animation-delay:3s;
+    animation-fill-mode:backwards;
+}
+
+
+
+
+@keyframes bnani{
+    0%{
+        transform:translate(-200px);
+        opacity:0;
+    }
+    100%{
+        transform:translate(0);
+        opacity:1;
+    }
+}
+
+@keyframes btnani{
+    0%{
+        transform:scale(0);
+
+    }
+
+    100%{
+        transform: scale(1);
+    }
+        
+
+}
+
+
+/* End banner  */
+
+/* Start Mission  */
+
+.missionimgs{
+    width:500px;
+    height:400px;
+
+    border-radius:5px;
+
+}
+
+/* End Mission */
+
+/* Start Collection  */
+
+.collectlists{
+    cursor:pointer;
+}
+
+.collectlists.activeitems{
+    color:#eb4034;
+}
+
+
+/* End Collection  */
+
+/* Start Contact */
+
+.maps{
+    width:100%;
+    min-height: 40vh;
+}
+
+.inputs{
+    color:gray;
+    border-color:transparent ;
+    border-bottom:2px solid gray;
+
+    border-radius:0;
+
+}
+
+.inputs:focus{
+    color:gray;
+    border-color:transparent;
+    border-bottom:2px solid #eb4034;
+
+    box-shadow: none;
+}
+
+.labels{
+    display: block;
+    font-size:15px;
+    color:#eb4034;
+
+   
+   transition:all 0.3s;
+}
+
+.inputs:placeholder-shown + .labels{
+    color:#eb4034;
+    opacity:0;
+    visibility: hidden;
+    transform: translate(20px,-20px);
+}
+
+/* End Contact  */
+
+/* Start footer */
+.footerlinks{
+    text-decoration: none;
+    color:white;
+}
+
+.footerlinks:hover{
+    color:#eb4034;
+}
+
+/* End Footer  */
